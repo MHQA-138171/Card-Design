@@ -15,8 +15,16 @@ body {
     background-color: #e0e8ff;
     background-image: url(/images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
-    background-position: 0% 32%;
-    background-size: cover;
+    background-size: 100% auto;
+    background-position: 0 -25%;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h3 {
@@ -32,13 +40,9 @@ p {
 }
 
 .card {
-    position: absolute;
-    top: 8%;
-    left: 38%;
-    width: 23%;
-    height: 70%;
-    margin-top: 50px;
-    border-radius: 10px;
+    width: 350px;
+    height: 530px;
+    border-radius: 15px;
     overflow: hidden;
 }
 
@@ -51,9 +55,10 @@ p {
 }
 
 #bd {
+    height: 66%;
     text-align: center;
     background-color: white;
-    padding: 40px;
+    padding: 35px;
     padding-top: 15px;
 }
 
@@ -64,12 +69,14 @@ p {
 }
 
 #pd {
+    display: flex;
+    align-items: center;
     height: 70px;
     margin-bottom: 20px;
     background-color: #f5f7ff;
     border-radius: 10px;
-    padding: 15px;
-    position: relative;
+    /* padding: 15px; */
+    /* position: relative; */
 }
 
 #b1 {
@@ -80,6 +87,7 @@ p {
     color: white;
     border-radius: 10px;
     border: none;
+    font-weight: 600;
 }
 
 #b2 {
@@ -103,6 +111,12 @@ p {
     color: #1f2f56;
 }
 
+.sc {
+    width: 70%;
+    display: flex;
+    padding-left: 20px;
+}
+
 #imgc {
     width: 40px;
     height: 40px;
@@ -113,28 +127,32 @@ p {
 
 }
 
+.pp {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 85px;
+    height: 40px;
+    flex-grow: 0;
+    padding-left: 10px;
+}
+
 #plan {
     margin: 0;
-    position: absolute;
-    top: 13px;
-    left: 24%;
     font-weight: 900;
     font-size: 0.8rem;
 }
 
 #price {
-    position: absolute;
-    top: 35px;
-    left: 24%;
     font-size: 0.8rem;
     color: #7280a7;
+    align-self: flex-end;
 }
 
 #a1 {
     font-size: 0.7rem;
-    position: absolute;
-    left: 75%;
-    top: 40%;
+    font-weight: 900;
+    margin-left: 20px;
 }
 
 #a1:hover {
